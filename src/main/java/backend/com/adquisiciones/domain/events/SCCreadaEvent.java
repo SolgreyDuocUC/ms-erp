@@ -1,0 +1,11 @@
+package backend.com.adquisiciones.domain.events;
+
+import backend.com.shared.events.DomainEvent;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor
+public class SCCreadaEvent extends DomainEvent {
+    private final Long solicitudCompraId;
+}
